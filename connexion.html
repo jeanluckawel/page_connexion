@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>message</title>
+<meta charset='utf-8' />
+</head>
+<style type="text/css">
+	body{
+
+		display:flex;
+		height: 70vh;
+		padding: 0;
+		justify-content: center;
+		background: lightgray;   
+		margin-top: 100px;
+		font-family: sans-serif;
+	}
+	.body{
+
+		background: white;
+		padding: 10px;
+		width: 420px;
+		height: auto;
+		border-radius: 50px;
+	}
+
+	form{
+
+		width: 100%;
+	}
+.email{
+
+		align-items: center;
+		display: inline-flex;
+		justify-content: flex-start;
+		width: 400px;
+		margin: 10px 0;
+		overflow: hidden;
+		border-radius: 10px;
+		border: 1px solid  #563C97;
+	}
+
+	form div label{
+
+		background:#563C97;
+		color: white;
+		padding: 12px;
+		display: inline-block;
+		width: 30%;
+	}
+
+	form div input{
+
+		width: 70%;
+		padding: 10px;
+		border: none;
+	}
+	form div button[type=submit]{
+
+		padding: 15px;
+		cursor: pointer;
+		border: none;
+		width:32%;
+		text-align: center;
+		font-size: 16px;
+		border-radius: 14px;
+		color: white;
+		background: #e76e29;
+		margin-left:30%;
+	
+
+	}
+strong{
+	color: #e76e29;
+	font-size: 35px;
+}
+h1{
+	color: #563C97;
+	font-size: 35px;
+	text-align: center;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+
+</style>
+<body>
+	<section class="body"><br><br><br>
+			<h1>JL<strong> KAWEL</strong></h1>
+			<p align="center">Veuillez utiliser cette option pour un rendez-vous en ligne ou en présentiel</p>
+			<form action='accueil.html' method='POST' name='Esis'>
+				<div class="email">
+					<label for="mat" name="mat">E-Mail</label> 
+					<input type='texte' id="mat" name='matricule' placeholder='Entrer votre adresse Mail' required>
+				</div>
+				<div class="email">
+					<label for="text" name="text">Message</label>
+					<input type='text' id="text" name='mot de passe' placeholder='Taper ici votre message' required>
+				</div>
+				<div>
+
+					<button type="submit"><a href="msg.html">
+						Envoyer</a>
+					</button>
+				</div>
+		</form>
+	</section>
+
+</body>
+</html>
